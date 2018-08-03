@@ -19,7 +19,7 @@ body {
   font-size: 10px;
 }
 .bg {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: fixed;
   background-position: center
@@ -55,7 +55,7 @@ body {
 }
 .box {
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
 }
 .inner {
   width: 1000px;
@@ -118,6 +118,10 @@ body {
   margin-bottom: 1em;
 }
 
+.crossFade {
+  text-align: center;
+  margin: 0 auto;
+}
 .trackList {
   margin: 0 auto;
 }
@@ -175,4 +179,10 @@ body {
 }
 .back a {
   color: #76742d;
+}
+
+@media screen and (min-width:769px) {
+  .sp {
+    display: none;
+  }
 }
