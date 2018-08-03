@@ -1,0 +1,172 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  background: #fef9e6;
+  background-image: url(../img/char.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  font-size: 10px;
+}
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.bg1 {
+  background-image: url(../img/layer.png);
+  background-size: cover;
+}
+.bg2 {
+  background-image: url(../img/char.png);
+  background-size: contain;
+}
+.wrapper {
+  position: relative;
+  z-index:2;
+}
+
+/***** area *****/
+.intro {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  position: relative;
+}
+.cdTitle {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  font-size: 3rem;
+}
+.box {
+  background-color: #fff;
+  width: 100vw;
+}
+.inner {
+  width: 1000px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.shadow {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 20vh;
+}
+
+/***** column *****/
+.column {
+  width: 100%;
+  display: flex;
+}
+.column + .column {
+  margin-top: 50px;
+}
+.column-50 {
+  width: 50%;
+  @media screen and (min-width:0px) {
+    width: 100%;
+  }
+}
+.column_inner {
+  max-width: 90%;
+  margin: 0 auto;
+  @media screen and (min-width:0px) {
+    max-width:100%;
+  }
+}
+
+/***** content *****/
+.title {
+  font-size: 1.8rem;
+  border-bottom: 1px dashed #76742d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.info dt {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(118, 116, 45, 0.5);
+  margin-bottom: 0.3em;
+}
+.info dd {
+  margin-left: 1em;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.trackList {
+  margin: 0 auto;
+}
+.trackList dt {
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-left: 1em;
+}
+.trackList dd {
+  font-size: 0.8rem;
+  padding-left: 3em;
+  padding-right: 1em;
+  padding-bottom: 10px;
+}
+.trackList dt:nth-of-type(odd) {
+  background-color: rgba(118, 116, 45, 0.05);
+}
+.trackList dd:nth-of-type(odd) {
+  background-color: rgba(118, 116, 45, 0.05);
+}
+.credit {
+  text-align: center;
+}
+.stuffList {
+  width: 100%;
+}
+.subTitle {
+  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 0.5em
+}
+.stuff li {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0 1em;
+}
+.copyright {
+  font-size: 0.6rem;
+}
+.copyright + .copyright {
+  margin-top: 1em;
+}
+/***** footer *****/
+.footer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.back {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.back a {
+  color: #76742d;
+}
