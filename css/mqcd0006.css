@@ -155,14 +155,22 @@ body {
 }
 .stuff li {
   font-size: 1rem;
-  display: inline-block;
-  margin: 0 1em;
 }
 .copyright {
   font-size: 0.6rem;
 }
 .copyright + .copyright {
   margin-top: 1em;
+}
+.share li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+@media screen and (min-width:769px) {
+  .stuff li {
+    display: inline-block;
+    margin: 0 1em;
+  }
 }
 /***** footer *****/
 .footer {
