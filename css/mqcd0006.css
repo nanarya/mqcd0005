@@ -15,10 +15,6 @@ a {
 body {
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   background: #fef9e6;
-  background-image: url(../img/char.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   min-height: 100vh;
   font-size: 10px;
 }
@@ -26,6 +22,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  background-position: center
 }
 .bg1 {
   background-image: url(../img/layer.png);
@@ -34,6 +31,7 @@ body {
 .bg2 {
   background-image: url(../img/char.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .wrapper {
   position: relative;
@@ -63,7 +61,7 @@ body {
   width: 1000px;
   max-width: 90%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 .shadow {
   background-color: rgba(0, 0, 0, 0.7);
@@ -75,24 +73,32 @@ body {
 .column {
   width: 100%;
   display: flex;
+  flex-direction: row;
 }
 .column + .column {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .column-50 {
   width: 50%;
-  @media screen and (min-width:0px) {
-    width: 100%;
-  }
 }
 .column_inner {
   max-width: 90%;
   margin: 0 auto;
-  @media screen and (min-width:0px) {
+}
+@media screen and (max-width:768px) {
+  .column {
+    flex-direction: column;
+  }
+  .column-50 {
+    width: 100%;
+  }
+  .column-50 + .column-50 {
+    margin-top: 40px;
+  }
+  .column_inner {
     max-width:100%;
   }
 }
-
 /***** content *****/
 .title {
   font-size: 1.8rem;
@@ -135,7 +141,7 @@ body {
 .credit {
   text-align: center;
 }
-.stuffList {
+.creditArea {
   width: 100%;
 }
 .subTitle {
