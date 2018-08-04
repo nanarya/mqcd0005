@@ -121,6 +121,7 @@ body {
 .crossFade {
   text-align: center;
   margin: 0 auto;
+  width: 90%;
 }
 .trackList {
   margin: 0 auto;
